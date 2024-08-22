@@ -1,19 +1,11 @@
 package com.example.wangwangorderpart.controller;
 
-import com.alibaba.fastjson.JSON;
-import com.example.wangwang.config.annotation.TokenToUser;
-import com.example.wangwang.entity.User;
-import com.example.wangwang.entity.common.R;
-import com.example.wangwang.entity.myenum.OrderType;
-import com.example.wangwang.entity.order.FoodOrder;
-import com.example.wangwang.entity.order.HotelOrder;
-import com.example.wangwang.entity.order.TripOrder;
-import com.example.wangwang.service.OrderService;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 
